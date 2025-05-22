@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nam" placeholder="nhập số năm">
+    <button onclick="namnhuan()">kiểm tra</button>
+    <h1 id="ketqua"></h1>
+</body>
+<script>
+function namnhuan() {
+    let year = document.getElementById("nam").value;
+    year = parseInt(year); 
+
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        document.getElementById("ketqua").innerHTML = year + " là năm nhuận";
+    } else {
+        document.getElementById("ketqua").innerHTML = year + " không là năm nhuận";
+    }
+}
+
+</script>
+</html>
