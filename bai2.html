@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let nhietdo = prompt("hãy nhập nhiệt độ");
+    nhietdo= parseFloat(nhietdo);
+    if(isNaN(nhietdo)){
+        alert("nhiệt độ không hợp lệ");
+    }
+    else{
+        if(nhietdo>100){
+            alert("hãy giảm nhiệt độ khẩn cấp");
+        }
+        else if(nhietdo<20){
+            alert("hãy tăng nhiệt độ");
+        }
+        else{
+            document.write("nhiệt độ bình thường");
+        }
+    }
+</script>
+</html>
